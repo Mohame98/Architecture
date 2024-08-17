@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Maitree:wght@200;300;400;500;600;700&family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Maitree", serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+h1, h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.tags {
+  border: #000 solid thin;
+  padding: 3px 13px;
+  border-radius: 30px;
+}
+
+.g-tags {
+  margin: 8px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+hr {
+  width: 100%;
+  background-color: lightgrey;
+  height: 1px;
+  border: none;
+}
+
+header {
+  z-index: 100;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav button {
+  background-image: url(./imgs/cross-white.png);
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 30px;
+  right: 30px;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header a:hover {
+  color: #000;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #000;
+}
+header .burger {
+  background-image: url(./imgs/menu-white.png);
+  background-position: center;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+header .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.cta .flex {
+  gap: 40px;
+}
+.cta .title {
+  width: 60%;
+}
+.cta .description {
+  width: 40%;
+}
+.cta img {
+  height: 450px;
+  margin-top: 30px;
+}
+.cta .img-container {
+  position: relative;
+}
+.cta .img-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+}
+.cta .img-tag .circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.cta hr {
+  margin-top: 50px;
+}
+
+.about .flex {
+  gap: 40px;
+}
+.about .title {
+  width: 50%;
+}
+.about .title h2 {
+  margin-top: 20px;
+}
+.about .description {
+  width: 50%;
+}
+.about .description p {
+  margin-bottom: 50px;
+}
+.about .grid {
+  -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.about .grid span {
+  color: gray;
+  font-weight: 500;
+}
+
+.gallery {
+  padding-top: 100px;
+}
+.gallery .grid {
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.gallery .card:nth-of-type(1) img {
+  height: 260px;
+  width: 400px;
+}
+.gallery .card:nth-of-type(1) p:nth-of-type(2) {
+  max-width: 400px;
+}
+.gallery .card:nth-of-type(4) {
+  -webkit-transform: translateY(-135px);
+          transform: translateY(-135px);
+}
