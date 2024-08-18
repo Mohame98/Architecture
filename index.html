@@ -1,131 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Architecture</title>
 
     <!-- slick -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-   
+
     <!-- font awesome -->
     <script
-        src="https://kit.fontawesome.com/f0f1fdeaf8.js"
-        crossorigin="anonymous"
+      src="https://kit.fontawesome.com/f0f1fdeaf8.js"
+      crossorigin="anonymous"
     ></script>
 
     <!-- Animate on Scroll -->
-	<link 
-    href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js -->
+    <script src="main.js" defer></script>
+
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-           <div class="flex"> 
-            <div class="wrapper">
-                <div class="logo"><a href="index.php">ArchArt.</a></div>
-                <div class="burger"></div>
-                <div class="nav">
-                    <button id="close-nav"></button>
-                    <ul class="nav-menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="gallery.php">About Us</a></li>
-                        <li><a href="contact.php">Services</a></li>
-                        <li><a href="contact.php">Projects</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="flex">
+          <div class="wrapper">
+            <div class="logo"><a href="index.php">ArchArt.</a></div>
+            <div class="burger"></div>
+            <div class="nav">
+              <button id="close-nav"></button>
+              <ul class="nav-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="gallery.php">About Us</a></li>
+                <li><a href="contact.php">Services</a></li>
+                <li><a href="contact.php">Projects</a></li>
+              </ul>
             </div>
-            <a href="#">Contact Us</a>
-            </div>
+          </div>
+          <a class="btn" href="#">Contact Us</a>
         </div>
-        <hr>
+      </div>
     </header>
+    <hr/>
 
     <section class="cta">
-        <div class="container">
-            <div class="flex">
-                <div class="title">
-                    <h1>transforming spaces with unparalleled architectural</h2>
-                </div>
-                <div class="description">
-                    <p>welcome to ArchArt, where innovation meets elegance in architectural design. With rich history and a forward-thinking approach, we transform visions into reality</p>
-                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="https://images.unsplash.com/photo-1629708371856-8eafa448bf00?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="architecture">
-                
-            </div>
-            <div class="img-tag">
-                <div class="circle"></div>
-                <p>LITHODEME RESIDENCE</p>
-            </div>
+      <div class="container">
+        <div class="flex">
+          <div class="title">
+            <h1>transforming spaces with unparalleled architectural</h1>
+          </div>
+          <div class="description">
+            <p>
+              Welcome to ArchArt, where innovation meets elegance in
+              architectural design. With rich history and a forward-thinking
+              approach, we transform visions into reality
+            </p>
+            <a class="btn" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-        <hr>
+        <div class="img-container">
+          <img
+            src="https://images.unsplash.com/photo-1629708371856-8eafa448bf00?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="architecture"
+          />
+        </div>
+        <div class="img-tag">
+          <div class="circle"></div>
+          <p>LITHODEME RESIDENCE</p>
+        </div>
+      </div>
     </section>
+    <hr/>
 
     <section class="about">
+      <div class="container">
+        <div class="flex">
+          <div class="title">
+            <span class="tags">About Us</span>
+            <h2>creating inspiring designs to transform spaces</h2>
+          </div>
+          <div class="description">
+            <p>
+              Founded in 1990, ArchArt has been at the forefront of the
+              architectural industry, delivering award-winning projects that
+              redefine the standards of design and functionality. Our journey
+              began with a simple mission: to create spaces that inspire and
+              elevate the human experience
+            </p>
+            <div class="grid">
+              <div class="card">
+                <h1>50+</h1>
+                <span>Satisfied Clients</span>
+              </div>
+              <div class="card">
+                <h1>100+</h1>
+                <span>Projects Completed</span>
+              </div>
+              <div class="card">
+                <h1>10+</h1>
+                <span>Years in Business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536858974309-969976df0d4d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="kicthen"
+            />
+            <p class="g-tags">Elegance</p>
+            <p>
+              Creating timesless beauty in every detail, our designs grace and
+              refinement
+            </p>
+          </div>
+          
+          <div class="card">
+            <p class="g-tags">Sustainability</p>
+            <p>
+              Integrating sustainability into every aspect of our work. Our
+              projects prioritize energy efficiency, renewable resources, and
+              eco-friendly materials
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="kicthen"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1581783748410-2c5377ad72ee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="kicthen"
+            />
+            <p class="g-tags">Sustainability</p>
+            <p>
+                Creating timeless beauty in every detail, our designs grace and
+                refinement
+            </p>
+          </div>
+          <div class="card">
+            <h2>Great architecture is more than just buildings</h2>
+          </div>
+          <div class="card"></div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1643999440226-7290747ef45f?q=80&w=1338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="kicthen"
+            />
+            <p class="g-tags">Sustainability</p>
+            <p>
+              Integrating sustainability into every aspect of our work. Our
+              projects prioritize energy efficiency, renewable resources, and
+              eco-friendly materials
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+
+    <section class="services">
         <div class="container">
             <div class="flex">
                 <div class="title">
-                    <span class="tags">About Us</span>
-                    <h2>creating inspiring designs to transform spaces</h2>
+                    <span class="tags">Our Services</span>
+                    <h2>Explore Our Wide Range of Services</h2>
                 </div>
-                <div class="description">
-                    <p>Founded in 1990, ArchArt has been at the forefront of the architectural industry, delivering award-winning projects that redefine the standards of design and functionality. Our journey began with a simple mission: to create spaces that inspire and elevate the human experience</p>
-                    <div class="grid">
-                        <div class="card">
-                            <h1>50+</h1>
-                            <span>Satisfied Clients</span>
+                <div class="services-menu">
+                    <p>At ArchArt, we offer a comprehensive range of architectural services, tailored to meet the unique needs of our clients. Our expertise spans accross various sectors, including:</p>
+                    <div class="service">
+                        <div class="wrapper">
+                            <h3 class="serve open">Design Consultation</h3>
+                            <span class="closed open"></span>
                         </div>
-                        <div class="card">
-                            <h1>100+</h1>
-                            <span>Projects Completed</span>
+                        <div class="service-description open">
+                            <p>An architecture design consultation provides expert guidance on developing your building or renovation project. During this session, an architect will review your ideas, assess your site, and discuss your goals, preferences, and budget. </p>
                         </div>
-                        <div class="card">
-                            <h1>10+</h1>
-                            <span>Years in Business</span>
+                        <hr>
+                    </div>
+                    <div class="service">
+                        <div class="wrapper">
+                            <h3 class="serve">Project Management</h3>
+                            <span class="closed"></span>
+                        </div>
+                        <div class="service-description">
+                            <p>A project management consultation involves collaborating with a project management expert to streamline your project from start to finish. During this session, you'll discuss project goals, timelines, and resources. The consultant provides strategic advice on planning, risk management, and resource allocation</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="service">
+                        <div class="wrapper">
+                            <h3 class="serve">Construction Supervision</h3>
+                            <span class="closed"></span>
+                        </div>
+                        <div class="service-description">
+                            <p>A construction supervision consultation focuses on overseeing the execution of architectural projects to ensure they are built according to design specifications and quality standards. During this consultation, a construction supervisor or architectural expert reviews project plans, monitors on-site activities, and coordinates between contractors</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <hr>
 
-    <section class="gallery">
+    <section class="projects">
         <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1536858974309-969976df0d4d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kicthen">
-                    <p class="g-tags">Elegance</p>
-                    <p>Creating timesless beauty in every detail, our designs grace and refinement</p>
+            <div class="title">
+                <span class="tags">Featured Projects</span>
+                <h2>Discover Our Diverse architectural Projects</h2>
+            </div>
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1627757793392-695323877935?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="caption">
+                        <h3>The Floating Gallery</h3>
+                        <p>Imagine a contemporary art gallery that floats on a lake or river, designed to create a seamless interaction</p>
+                    </div>
                 </div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kicthen">
-                    <p class="g-tags">Sustainability</p>
-                    <p>Integrating sustainability into every aspect of our work. Our projects prioritize energy efficiency, renewable resources, and eco-friendly materials</p>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1534024669648-7183524c6fbb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="caption">
+                        <h3>The Whimsical Treehouse Hotel</h3>
+                        <p> panoramic windows that offer breathtaking views. Inside, the design would focus on creating a cozy.</p>
+                    </div>
+                  </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1534356770196-b69fc0ac293b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="caption">
+                        <h3>The Prism Pavilion</h3>
+                        <p>This project envisions a public pavilion designed as a dynamic, ever-changing prism. The structure.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1613484259733-383234e8e8af?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="caption">
+                        <h3>Dyptique</h3>
+                        <p>The dyptique project is located in the quiet town of stanstead and is characterised by a monochromatic.</p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-        <hr>
+    </section>
+    <hr/>
+
+    <section class="footer">
+        <div class="container">
+            <div class="flex">
+                <div class="title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-info">
+                    <div class="wrapper">
+                        <span>Phone Number</span>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="wrapper">
+                        <span>Address</span>
+                        <p>123 Maple Street Springfield, CA 90210 United States</p>
+                    </div>
+                    <div class="wrapper">
+                        <span>Email Address</span>
+                        <p>info@archart.com</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="img"></div>
     </section>
 
-
     <!-- AOS js -->
-	<script 
-      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
-    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- JQUERY -->
     <script
@@ -142,5 +303,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-</body>
+  </body>
 </html>

@@ -1,23 +1,53 @@
-// $('.slider-holder').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     dots: true,
-//     // autoplay: true,
-//     autoplaySpeed: 2000,
-//     speed: 400,
-//     ease: 'linear',
-//     centerMode: true,
-//     centerPadding: $('.slick').find('.item').outerWidth() / 2
-// });
+$(document).ready(function () {
+    $('.slider').slick({
+    centerMode: true,
+    centerPadding: "0",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // speed: 500,
+    // autoplaySpeed: 5000,
+    // Infinite: true,
+    // autoplay: true,
+    arrows: true,
+    // pauseonhover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+    $('.slick-prev').addClass('fa-solid fa-arrow-left').empty(); 
+    $('.slick-next').addClass('fa-solid fa-arrow-right').empty();
+});
 
-// $('#btn1').on('click', function(){
-//     $('h2').text('is a test').css('color', 'red');
-//     $('h3').toggleClass('subtitle');
-// });
+document.querySelectorAll('.service').forEach(function(service) {
+    const serviceBar = service.querySelector('.wrapper');
+    const serviceDesc = service.querySelector('.service-description');
+    const closed = service.querySelector('.wrapper span')
+    const h3 = service.querySelector('.serve')
 
-// $('.question').on('click', function(){
-//     $('.question').toggleClass('is-open');
+    serviceBar.addEventListener('click', function() {
+        h3.classList.toggle("open")
+        serviceDesc.classList.toggle("open");
+        closed.classList.toggle("open");
+    });
+});
 
-//     $('.answer').slideToggle();
-// });
+AOS.init({
+    once: true,
+  });
