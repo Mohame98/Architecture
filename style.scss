@@ -89,8 +89,7 @@ hr{
 }
 
 // header
-
-header{
+.header{
     z-index: 100;
     transition: 0.7s;
 
@@ -106,35 +105,6 @@ header{
         align-items: center;
     }
 
-    .nav{
-        
-        button{
-            background-image: url(./imgs/cross-white.png);
-            background-position: center;
-            background-size: cover;
-            background-color: transparent;
-            height: 80px;
-            width: 80px;
-            font-size: 30px;
-            display: none;
-            position: absolute;
-            cursor: pointer;
-            border: none;
-            top: 30px;
-            right: 30px;
-        }
-    } 
-
-    a{
-        text-decoration: none;
-        color: #000;
-        transition: 0.4s;
-   
-        &:hover{
-            color: #000;
-        }
-    }
-
     .logo{
         font-weight: 600;
         font-size: 20px;
@@ -145,27 +115,32 @@ header{
         }
     }
 
-    .burger{
-        background-image: url(./imgs/menu-white.png);
-        background-position: center;
-        background-size: cover;
-        height: 25px;
-        width: 25px;
+    .menu-icon{
+        font-size: 22px;
         cursor: pointer;
         display: none;
     }
 
-    .nav-menu{
+    #menuList{
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 35px;
+
+        a{
+            text-decoration: none;
+            color: #000;
+            transition: 0.4s;
+       
+            &:hover{
+                color: #000;
+            }
+        }
     }
 }
 
 // cta
-
 .cta{
-
     .flex{
         gap: 40px;
     }
@@ -199,30 +174,13 @@ header{
         object-fit: cover;
     }
 
-    .img-tag{
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        color: #fff;
-
-        .circle{
-            height: 8px;
-            width: 8px;
-            border-radius: 50%;
-            background-color: #fff;
-            margin-right: 10px;
-        }
-    }
-
     hr{
         margin-top: 50px;
     }
 }
 
+// about
 .about{
-
     .flex{
         gap: 40px;
     }
@@ -250,6 +208,7 @@ header{
     }    
 }
 
+// gallery
 .gallery{
     padding-top: 100px;
 
@@ -259,7 +218,6 @@ header{
     }
 
     .card:nth-of-type(1){
-
        img{
             height: 260px;
             width: 400px;
@@ -311,9 +269,7 @@ header{
 }
 
 // srvices
-
 .services{
-
     .flex{
         gap: 30px;
     }
@@ -372,18 +328,14 @@ header{
 }
 
 // project
-
 .projects{
-
     .title{
-
         h2{
             max-width: 500px;
         }
     }
 
     .slider{
-        
         .slide{
             color: #000;
 
@@ -392,34 +344,36 @@ header{
             }
         }
 
-        .slick-arrow{
+        .slick-arrow {
+            background-image: url(./imgs/icons8-right-arrow-50.png);
+            background-position: center;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
             z-index: 10;
             top: -50px;
             position: absolute;
-            background-color: #fff;
-            border: #000 solid 1px;
-            border-radius: 50%;
-            padding: 13px;
-            font-size: 17px;
+            background-color: transparent;
+            border: none;
+            font-size: 0;
             cursor: pointer;
             transition: 0.4s;
 
-            &:hover{
-                background-color: #000;
-                color: #fff;
+            &:hover {
+                scale: 1.1;
             }
         }
 
-        .slick-prev{
-            right: 95px;
+        .slick-prev {
+            right: 90px;
+            transform: rotateY(-180deg);
         }
 
-        .slick-next{
-            right: 40px;  
+        .slick-next {
+            right: 0;
         }
 
         .slick-slide img{
-            margin: 0 15px;
             transform: scale(0.8);
             max-width: 100%;
             transition: all 0.4s ease-in-out;
@@ -427,10 +381,6 @@ header{
             width: 400px;
         }
         
-        .slick-list{
-            margin: 0 -15px;
-        }
-
         .slick-center img{
             margin-top: 37px;
             transform: scale(1.1);  
@@ -438,18 +388,13 @@ header{
 
         .slick-center .caption{
             display: block;
-        }
-
-        .caption{
             margin-top: 20px;
         }
     }
 }
 
 // footer
-
 .footer{
-
     padding-bottom: 0;
 
     .title{
@@ -488,3 +433,261 @@ header{
     }
 }
 
+// responsive
+@media only screen and (max-width: 1100px) {
+    h1{
+        font-size: 45px;
+        max-width: 500px;
+    }
+
+    // cta
+    .cta{
+        .description{
+            .btn{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 900px) {
+    // cta
+    .cta{
+        .flex{
+            flex-direction: column;
+        }
+
+        .title{
+            width: 100%;
+        }
+    
+        .description{
+            width: 100%;
+        }
+
+        .img-container{
+            height: 350px;
+        }
+    }
+
+    // about
+    .about{
+        .flex{
+            flex-direction: column;
+        }
+        
+        .title{
+            width: 100%;
+        }
+
+        .description{
+            width: 100%;
+
+            p{
+                margin-bottom: 25px;
+            }
+        }  
+    }
+
+    // gallery
+    .gallery{
+        padding-top: 10px;
+
+        .grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .card:nth-of-type(1){
+            img{
+                height: none;
+                width: 100%;
+            }
+
+            p:nth-of-type(2){
+                max-width: none;
+            }
+        }
+
+        .card:nth-of-type(2){
+            transform: none;
+
+            .wrap{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            p:nth-of-type(2){
+                margin-bottom: 15px;
+            }
+        }
+
+        .card:nth-of-type(3){
+            transform: none;
+            
+            img{
+                height: none;
+                width: 100%;
+            }
+
+            p{
+                max-width: none;
+            }
+        }
+
+        .card:nth-of-type(4){
+            transform: none;
+            
+            h2{
+                font-size: 30px;
+                max-width: none;
+            }
+        }
+
+        .card:nth-of-type(6){
+            transform: none;
+
+            img{
+                height: none;
+                width: 100%;
+            }
+        }
+    }
+
+    // srvices
+    .services{
+        .flex{
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .title{
+            width: 100%;
+        }
+
+        .services-menu{
+            width: 100%;
+
+            p{
+                margin-bottom: 30px;
+            }
+
+            .open{
+                max-height: 200px;
+            }
+        }
+    }
+
+    // project
+    .projects{
+        .slider{
+            margin-left: -35px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    section{
+        padding: 30px 0;
+    }
+
+    // header
+    .header{
+        .navList ul{
+            z-index: 100;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            text-align: center;
+            background: #fff;
+            gap: 40px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            li{
+                padding: 20px;
+                padding-top: 0;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    
+        .menu-icon{
+            display: block;
+        }
+
+        #menuList{
+            transition: height 0.7s ease;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    p{
+        font-size: 14px;
+    }
+
+    // project
+    .projects{
+        .slider{
+            margin-left: 0;
+ 
+            .slick-slide img{
+                height: 250px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    // footer
+    .footer{
+        .flex{
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .title{
+            width: 100%;
+        }
+
+        .contact-info{
+            width: 100%;
+        }
+
+        .wrapper:nth-of-type(2){
+            p{
+                max-width: 250px; 
+            }
+        }
+
+        .img{
+            height: 200px;
+            margin-top: 30px;
+        }
+    }
+}

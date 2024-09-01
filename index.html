@@ -31,15 +31,16 @@
 
   </head>
   <body>
-    <header class="header">
+    <nav class="header">
       <div class="container">
         <div class="flex">
           <div class="wrapper">
             <div class="logo"><a href="index.php">ArchArt.</a></div>
-            <div class="burger"></div>
-            <div class="nav">
-              <button id="close-nav"></button>
-              <ul class="nav-menu">
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+            <div class="navList">
+              <ul id="menuList">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="gallery.php">About Us</a></li>
                 <li><a href="contact.php">Services</a></li>
@@ -50,7 +51,7 @@
           <a class="btn" href="#">Contact Us</a>
         </div>
       </div>
-    </header>
+    </nav>
     <hr/>
 
     <section class="cta">
@@ -74,10 +75,6 @@
             alt="architecture"
           />
         </div>
-        <div class="img-tag">
-          <div class="circle"></div>
-          <p>LITHODEME RESIDENCE</p>
-        </div>
       </div>
     </section>
     <hr/>
@@ -99,15 +96,15 @@
             </p>
             <div class="grid">
               <div class="card">
-                <h1>50+</h1>
+                <h2>50+</h2>
                 <span>Satisfied Clients</span>
               </div>
               <div class="card">
-                <h1>100+</h1>
+                <h2>100+</h2>
                 <span>Projects Completed</span>
               </div>
               <div class="card">
-                <h1>10+</h1>
+                <h2>10+</h2>
                 <span>Years in Business</span>
               </div>
             </div>
@@ -132,16 +129,20 @@
           </div>
           
           <div class="card">
-            <p class="g-tags">Sustainability</p>
-            <p>
-              Integrating sustainability into every aspect of our work. Our
-              projects prioritize energy efficiency, renewable resources, and
-              eco-friendly materials
-            </p>
-            <img
-              src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="kicthen"
-            />
+            <div class="wrap">
+              <div class="sub-wrap">
+                <p class="g-tags">Sustainability</p>
+                <p>
+                  Integrating sustainability into every aspect of our work. Our
+                  projects prioritize energy efficiency, renewable resources, and
+                  eco-friendly materials.
+                </p>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="kicthen"
+              />
+            </div>
           </div>
           <div class="card">
             <img
